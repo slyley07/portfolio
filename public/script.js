@@ -60,10 +60,8 @@ $(document).ready(function(){
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 800) {
-      $('#frameBerries').fadeIn(1000);
-    } else {
-      $('#frameBerries').fadeOut(100);
+    if (y > 100) {
+      $('.scroller').fadeOut(100);
     }
 
     if (y > 400) {
@@ -72,8 +70,12 @@ $(document).ready(function(){
       $('#langs').fadeOut(100);
     }
 
-    if (y > 100) {
-      $('.scroller').fadeOut(100);
+    if (y > 800) {
+      $('#frameBerries').fadeIn(1000);
+    } else {
+      $('#frameBerries').fadeOut(100);
     }
+
+
   });
 })
