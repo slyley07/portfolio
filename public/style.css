@@ -65,7 +65,7 @@ p.blurb {
 
 
 .spacer {
-  margin-top: 160px;
+  margin-top: 230px;
 }
 /*.row:nth-child(3), .row:nth-child(4) {
   margin: 250px 0;
@@ -147,6 +147,12 @@ h4 {
 
 ul {
   list-style-type: none;
+}
+
+.site {
+  padding: 0;
+  margin: 15px 0;
+  /*box-shadow: 5px 5px 5px #000000;*/
 }
 
 .contact {
