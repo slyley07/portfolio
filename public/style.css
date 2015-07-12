@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  /*padding: 0 0 70px 0;*/
   font-family: 'Quicksand', sans-serif;
   background-color: #EBEBEB;
 }
 
+/*JUMBOTRON*/
 .jumbotron {
   background-image: url("images/crane.png");
   background-position: top;
@@ -15,16 +15,14 @@ body {
   padding: 0;
 }
 
-.jumbotron img {
-  /*width: 5*/
-}
-
+/*DROPDOWN MENU BUTTON*/
 .open>.dropdown-toggle.btn-default:hover, .btn-default:hover, .btn-default:focus, .btn-default.active.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover, .btn-default, .open>.dropdown-toggle.btn-default:focus, .btn-default:active:focus {
   background-color: rgba(0, 0, 0, 0);
   border: 0px;
   outline: none;
 }
 
+/*DROPDOWN MENU*/
 .dropdown-menu{
   left: -25px;
   background-color: rgba(255, 0, 0, 0);
@@ -32,6 +30,7 @@ body {
   box-shadow: none;
 }
 
+/*DROPDOWN MENU ANCHORS*/
 .dropdown-menu a, .dropdown-menu a:hover {
   color: #C7777A;
   text-decoration: none;
@@ -39,22 +38,19 @@ body {
   font-size: 20px
 }
 
+/*JUMBOTRON HEADER*/
 .jumbotron h1 {
   padding: 240px 0 0 0;
   margin: 0 auto;
   color: black;
-  text-align: center;
 }
 
-.jumbotron h2 {
+/*JUMBOTRON SUB-HEADER*/
+.scroller {
   margin: 170px 0 0 0;
-  text-align: center;
 }
 
-.blurb {
-  text-align: center;
-}
-
+/*ABOUT ME BLURBS*/
 h2.blurb {
   margin-top: 120px;
 }
@@ -67,92 +63,106 @@ p.blurb {
 .spacer {
   margin-top: 230px;
 }
-/*.row:nth-child(3), .row:nth-child(4) {
-  margin: 250px 0;
-}*/
 
-.langs, .frameBerries {
+.langs, .frames {
   /*text-align: center;*/
   margin: 10px 0px;
   font-size: 3em;
 }
-.frameBerries{
+
+#langs div, #frames div {
+  float: left;
+}
+
+.frames{
   text-align: right;
 }
 
-.icons {
-  text-align: center;
+
+/*ICONS*/
+.icons, .iconsTwo {
   display: none;
+}
+
+.icons {
+  padding: 15px 0;
+}
+
+.iconsTwo {
+  padding: 35px 0;
 }
 
 .icon {
   width: 100px;
   height: 100px;
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 30px;
 }
 
-#langs div, #frameBerries div {
-  float: left;
-}
-
-.icon.html {
-  padding-top: 3px;
+.icon.html, .icon.css {
+  padding-top: 5px;
 }
 
 .icon.css {
   width: 70px;
-  padding-top: 3px;
 }
 
 .icon.js {
-  height: 109px;
   width: 105px;
 }
 
-.languages {
-  display: none;
+
+/*MODAL BUTTONS*/
+.mod button, .mod button:hover, .mod button:focus {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  outline: none;
+  margin: 100px 0 0 0;
 }
 
-.col-md-12 p {
+.mod button img {
+  width: 30px;
+}
+
+/*TEXT ALIGNING EVERYTHING*/
+.jumbotron h1, .scroller, .blurb, .col-md-12 h1, .col-md-12 p, .profile h2,  .profile p, h4, footer, .icons, .iconsTwo {
   text-align: center;
-  font-size: 25px;
+}
+
+.languages .icon {
+  margin: 10px 10px;
 }
 
 .col-md-12 h1 {
   margin-top: 50px;
-  text-align: center;
-  /*font-size: 50px;*/
 }
 
-
-
-h4 {
-  text-align: center;
+.col-md-12 p {
+  font-size: 25px;
 }
 
 .projects {
   margin-top: 50px;
 }
 
-.projects ul li {
-  font-size: 30px;
-  margin-top: 20px;
-}
-
-.projects ul p {
-  font-size: 20px;
-  margin-left: 15px;
-}
-
 ul {
   list-style-type: none;
+  padding: 10px;
+}
+
+.languages {
+  margin: 0 auto;
+  /*width: 370px;*/
+}
+
+.languages.css, .languages.html {
+  padding-top: 5px;
+  width: 70px;
 }
 
 .site {
   padding: 0;
   margin: 15px 0;
-  /*box-shadow: 5px 5px 5px #000000;*/
 }
 
 .contact {
@@ -165,7 +175,6 @@ ul {
 }
 
 footer {
-  text-align: center;
   margin-top: 50px;
   background-color: #FFFFFF;
   padding-bottom: 50px;
