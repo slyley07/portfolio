@@ -129,8 +129,20 @@ p.blurb {
   text-align: center;
 }
 
-.languages .icon {
+.languages.data, .languages.sule, .languages.zap {
+  width: 370px;
+}
+
+.languages.data .icon, .languages.sule .icon, .languages.zap .icon  {
+  margin: 0px 10px;
+}
+
+.portLang .icon {
   margin: 10px 10px;
+}
+
+.modal-body a img {
+  width: 50px;
 }
 
 .col-md-12 h1 {
@@ -142,7 +154,11 @@ p.blurb {
 }
 
 .projects {
-  margin-top: 50px;
+  margin-top: 100px;
+}
+
+.profile {
+  margin-top: 100px;
 }
 
 ul {
